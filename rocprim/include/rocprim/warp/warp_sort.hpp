@@ -62,7 +62,7 @@ BEGIN_ROCPRIM_NAMESPACE
 /// member function.
 ///
 /// \code{.cpp}
-/// __global__ void example_kernel(...)
+/// __global__ static void example_kernel(...)
 /// {
 ///     const unsigned int i = blockIdx.x * blockDim.x + threadIdx.x;
 ///
@@ -80,7 +80,7 @@ BEGIN_ROCPRIM_NAMESPACE
 ///     return a < b;
 /// }
 /// ...
-/// __global__ void example_kernel(...)
+/// __global__ static void example_kernel(...)
 /// {
 ///     const unsigned int i = blockIdx.x * blockDim.x + threadIdx.x;
 ///
@@ -164,7 +164,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     int value = ...;
     ///     using warp_sort_int = rp::warp_sort<int, 64>;
@@ -256,7 +256,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     int value = ...;
     ///     using warp_sort_int = rp::warp_sort<int, 64>;

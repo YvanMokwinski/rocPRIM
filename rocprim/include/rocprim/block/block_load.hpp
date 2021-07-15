@@ -108,7 +108,7 @@ enum class block_load_method
 /// \p int and 8 items per thread.
 ///
 /// \code{.cpp}
-/// __global__ void example_kernel(int * input, ...)
+/// __global__ static void example_kernel(int * input, ...)
 /// {
 ///     const int offset = blockIdx.x * 128 * 8;
 ///     int items[8];
@@ -253,7 +253,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     int items[8];
     ///     using block_load_int = rocprim::block_load<int, 128, 8>;
@@ -298,7 +298,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     int items[8];
     ///     using block_load_int = rocprim::block_load<int, 128, 8>;
@@ -347,7 +347,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     int items[8];
     ///     using block_load_int = rocprim::block_load<int, 128, 8>;

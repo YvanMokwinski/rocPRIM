@@ -85,7 +85,7 @@ struct select_warp_scan_impl
 /// warp size is 64. Block (tile) size is 64.
 ///
 /// \code{.cpp}
-/// __global__ void example_kernel(...)
+/// __global__ static void example_kernel(...)
 /// {
 ///     // specialize warp_scan for int and logical warp of 16 threads
 ///     using warp_scan_int = rocprim::warp_scan<int, 16>;
@@ -153,7 +153,7 @@ public:
     /// Hardware warp size is 64. Block (tile) size is 256.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...) // blockDim.x = 256
+    /// __global__ static void example_kernel(...) // blockDim.x = 256
     /// {
     ///     // specialize warp_scan for float and logical warp of 32 threads
     ///     using warp_scan_f = rocprim::warp_scan<float, 32>;
@@ -227,7 +227,7 @@ public:
     /// each thread provides one \p int value. Hardware warp size is 64. Block (tile) size is 256.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...) // blockDim.x = 256
+    /// __global__ static void example_kernel(...) // blockDim.x = 256
     /// {
     ///     // specialize warp_scan for int and logical warp of 64 threads
     ///     using warp_scan_int = rocprim::warp_scan<int, 64>;
@@ -306,7 +306,7 @@ public:
     /// Hardware warp size is 64. Block (tile) size is 256.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...) // blockDim.x = 256
+    /// __global__ static void example_kernel(...) // blockDim.x = 256
     /// {
     ///     // specialize warp_scan for float and logical warp of 32 threads
     ///     using warp_scan_f = rocprim::warp_scan<float, 32>;
@@ -387,7 +387,7 @@ public:
     /// each thread provides one \p int value. Hardware warp size is 64. Block (tile) size is 256.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...) // blockDim.x = 256
+    /// __global__ static void example_kernel(...) // blockDim.x = 256
     /// {
     ///     // specialize warp_scan for int and logical warp of 64 threads
     ///     using warp_scan_int = rocprim::warp_scan<int, 64>;
@@ -471,7 +471,7 @@ public:
     /// Hardware warp size is 64. Block (tile) size is 256.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...) // blockDim.x = 256
+    /// __global__ static void example_kernel(...) // blockDim.x = 256
     /// {
     ///     // specialize warp_scan for float and logical warp of 32 threads
     ///     using warp_scan_f = rocprim::warp_scan<float, 32>;
@@ -561,7 +561,7 @@ public:
     /// Block (tile) size is 256.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...) // blockDim.x = 256
+    /// __global__ static void example_kernel(...) // blockDim.x = 256
     /// {
     ///     // specialize warp_scan for int and logical warp of 64 threads
     ///     using warp_scan_int = rocprim::warp_scan<int, 64>;

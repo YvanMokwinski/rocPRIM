@@ -85,7 +85,7 @@ struct select_block_sort_impl<block_sort_algorithm::bitonic_sort>
 /// one \p int value, results are returned using the same variable as for input.
 ///
 /// \code{.cpp}
-/// __global__ void example_kernel(...)
+/// __global__ static void example_kernel(...)
 /// {
 ///     // specialize block_sort for int, block of 256 threads,
 ///     // key-only sort
@@ -170,7 +170,7 @@ public:
     /// one \p int value, results are returned using the same variable as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_sort for int, block of 256 threads,
     ///     // key-only sort
@@ -241,7 +241,7 @@ public:
     /// one \p int key and one \p int value, results are returned using the same variable as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_sort for int, block of 256 threads,
     ///     using block_sort_int = rocprim::block_sort<int, 256, int>;

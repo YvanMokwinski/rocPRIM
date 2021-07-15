@@ -170,7 +170,7 @@ public:
 /// eight \p int value, results are returned using the same array as for input.
 ///
 /// \code{.cpp}
-/// __global__ void example_kernel(...)
+/// __global__ static void example_kernel(...)
 /// {
 ///     // specialize block_radix_sort for int, block of 256 threads,
 ///     // and eight items per thread; key-only sort
@@ -254,7 +254,7 @@ public:
     /// two \p float value, results are returned using the same array as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_radix_sort for float, block of 128 threads,
     ///     // and two items per thread; key-only sort
@@ -326,7 +326,7 @@ public:
     /// two \p float value, results are returned using the same array as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_radix_sort for float, block of 128 threads,
     ///     // and two items per thread; key-only sort
@@ -403,7 +403,7 @@ public:
     /// arrays as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_radix_sort for int-float pairs, block of 128
     ///     // threads, and two items per thread
@@ -490,7 +490,7 @@ public:
     /// arrays as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_radix_sort for int-float pairs, block of 128
     ///     // threads, and two items per thread
@@ -573,7 +573,7 @@ public:
     /// two \p float value, results are returned using the same array as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_radix_sort for float, block of 128 threads,
     ///     // and two items per thread; key-only sort
@@ -647,7 +647,7 @@ public:
     /// two \p float value, results are returned using the same array as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_radix_sort for float, block of 128 threads,
     ///     // and two items per thread; key-only sort
@@ -725,7 +725,7 @@ public:
     /// arrays as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_radix_sort for int-float pairs, block of 4
     ///     // threads, and two items per thread
@@ -810,7 +810,7 @@ public:
     /// arrays as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_radix_sort for int-float pairs, block of 4
     ///     // threads, and two items per thread

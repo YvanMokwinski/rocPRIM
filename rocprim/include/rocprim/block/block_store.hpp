@@ -108,7 +108,7 @@ enum class block_store_method
 /// \p int and 8 items per thread.
 ///
 /// \code{.cpp}
-/// __global__ void kernel(int * output)
+/// __global__ static void kernel(int * output)
 /// {
 ///     const int offset = blockIdx.x * 128 * 8;
 ///     int items[8];
@@ -210,7 +210,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void kernel(...)
+    /// __global__ static void kernel(...)
     /// {
     ///     int items[8];
     ///     using block_store_int = rocprim::block_store<int, 128, 8>;
@@ -252,7 +252,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void kernel(...)
+    /// __global__ static void kernel(...)
     /// {
     ///     int items[8];
     ///     using block_store_int = rocprim::block_store<int, 128, 8>;

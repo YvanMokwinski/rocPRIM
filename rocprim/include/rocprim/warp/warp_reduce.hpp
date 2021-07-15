@@ -87,7 +87,7 @@ struct select_warp_reduce_impl
 /// warp size is 64. Block (tile) size is 64.
 ///
 /// \code{.cpp}
-/// __global__ void example_kernel(...)
+/// __global__ static void example_kernel(...)
 /// {
 ///     // specialize warp_reduce for int and logical warp of 16 threads
 ///     using warp_reduce_int = rocprim::warp_reduce<int, 16>;
@@ -156,7 +156,7 @@ public:
     /// warp size is 64. Block (tile) size is 64.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize warp_reduce for int and logical warp of 16 threads
     ///     using warp_reduce_int = rocprim::warp_reduce<int, 16>;
@@ -227,7 +227,7 @@ public:
     /// warp size is 64. Block (tile) size is 64.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize warp_reduce for int and logical warp of 16 threads
     ///     using warp_reduce_int = rocprim::warp_reduce<int, 16>;

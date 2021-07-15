@@ -98,7 +98,7 @@ apply(FlagOp flag_op, const T& a, const T& b, unsigned int)
 /// \p int.
 ///
 /// \code{.cpp}
-/// __global__ void example_kernel(...)
+/// __global__ static void example_kernel(...)
 /// {
 ///     // specialize discontinuity for int and a block of 128 threads
 ///     using block_discontinuity_int = rocprim::block_discontinuity<int, 128>;
@@ -172,7 +172,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize discontinuity for int and a block of 128 threads
     ///     using block_discontinuity_int = rocprim::block_discontinuity<int, 128>;
@@ -254,7 +254,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize discontinuity for int and a block of 128 threads
     ///     using block_discontinuity_int = rocprim::block_discontinuity<int, 128>;
@@ -344,7 +344,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize discontinuity for int and a block of 128 threads
     ///     using block_discontinuity_int = rocprim::block_discontinuity<int, 128>;
@@ -426,7 +426,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize discontinuity for int and a block of 128 threads
     ///     using block_discontinuity_int = rocprim::block_discontinuity<int, 128>;
@@ -516,7 +516,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize discontinuity for int and a block of 128 threads
     ///     using block_discontinuity_int = rocprim::block_discontinuity<int, 128>;
@@ -603,7 +603,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize discontinuity for int and a block of 128 threads
     ///     using block_discontinuity_int = rocprim::block_discontinuity<int, 128>;
@@ -701,7 +701,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize discontinuity for int and a block of 128 threads
     ///     using block_discontinuity_int = rocprim::block_discontinuity<int, 128>;
@@ -802,7 +802,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize discontinuity for int and a block of 128 threads
     ///     using block_discontinuity_int = rocprim::block_discontinuity<int, 128>;

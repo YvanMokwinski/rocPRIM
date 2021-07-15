@@ -102,7 +102,7 @@ struct select_block_histogram_impl<block_histogram_algorithm::using_sort>
 /// one \p int value, result is returned using the same variable as for input.
 ///
 /// \code{.cpp}
-/// __global__ void example_kernel(...)
+/// __global__ static void example_kernel(...)
 /// {
 ///     // specialize block_histogram for int, logical block of 192 threads,
 ///     // 2 items per thread and a bin size of 192.
@@ -191,7 +191,7 @@ public:
     /// one \p int value, result is returned using the same variable as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_histogram for int, logical block of 192 threads,
     ///     // 2 items per thread and a bin size of 192.
@@ -266,7 +266,7 @@ public:
     /// one \p int value, result is returned using the same variable as for input.
     ///
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_histogram for int, logical block of 192 threads,
     ///     // 2 items per thread and a bin size of 192.

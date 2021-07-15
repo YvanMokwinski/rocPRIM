@@ -49,7 +49,7 @@ template<
     class OutputIterator,
     class UnaryFunction
 >
-__global__
+__global__ static
 __launch_bounds__(BlockSize)
 void transform_kernel(InputIterator input,
                       const size_t size,

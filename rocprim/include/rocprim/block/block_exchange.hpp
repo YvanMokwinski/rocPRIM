@@ -56,7 +56,7 @@ BEGIN_ROCPRIM_NAMESPACE
 /// \p int with 8 items per thread.
 ///
 /// \code{.cpp}
-/// __global__ void example_kernel(...)
+/// __global__ static void example_kernel(...)
 /// {
 ///     // specialize block_exchange for int, block of 128 threads and 8 items per thread
 ///     using block_exchange_int = rocprim::block_exchange<int, 128, 8>;
@@ -149,7 +149,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_exchange for int, block of 128 threads and 8 items per thread
     ///     using block_exchange_int = rocprim::block_exchange<int, 128, 8>;
@@ -215,7 +215,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_exchange for int, block of 128 threads and 8 items per thread
     ///     using block_exchange_int = rocprim::block_exchange<int, 128, 8>;
@@ -281,7 +281,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_exchange for int, block of 128 threads and 8 items per thread
     ///     using block_exchange_int = rocprim::block_exchange<int, 128, 8>;
@@ -350,7 +350,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_exchange for int, block of 128 threads and 8 items per thread
     ///     using block_exchange_int = rocprim::block_exchange<int, 128, 8>;
@@ -424,7 +424,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_exchange for int, block of 128 threads and 8 items per thread
     ///     using block_exchange_int = rocprim::block_exchange<int, 128, 8>;
@@ -498,7 +498,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_exchange for int, block of 128 threads and 8 items per thread
     ///     using block_exchange_int = rocprim::block_exchange<int, 128, 8>;
@@ -578,7 +578,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_exchange for int, block of 128 threads and 8 items per thread
     ///     using block_exchange_int = rocprim::block_exchange<int, 128, 8>;
@@ -661,7 +661,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block_exchange for int, block of 128 threads and 8 items per thread
     ///     using block_exchange_int = rocprim::block_exchange<int, 128, 8>;

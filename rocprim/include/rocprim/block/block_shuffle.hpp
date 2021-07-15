@@ -69,7 +69,7 @@ BEGIN_ROCPRIM_NAMESPACE
 /// one \p int value, result is returned using the same variable as for input.
 ///
 /// \code{.cpp}
-/// __global__ void example_kernel(...)
+/// __global__ static void example_kernel(...)
 /// {
 ///     // specialize block__shuffle_int for int and logical warp of 192 threads
 ///     using block__shuffle_int = rocprim::block_shuffle<int, 192>;
@@ -131,7 +131,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block__shuffle_int for int and logical warp of 192 threads
     ///     using block__shuffle_int = rocprim::block_shuffle<int, 192>;
@@ -197,7 +197,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block__shuffle_int for int and logical warp of 192 threads
     ///     using block__shuffle_int = rocprim::block_shuffle<int, 192>;
@@ -261,7 +261,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block__shuffle_int for int and logical warp of 192 threads
     ///     using block__shuffle_int = rocprim::block_shuffle<int, 192>;
@@ -377,7 +377,7 @@ public:
     ///
     /// \par Example.
     /// \code{.cpp}
-    /// __global__ void example_kernel(...)
+    /// __global__ static void example_kernel(...)
     /// {
     ///     // specialize block__shuffle_int for int and logical warp of 192 threads
     ///     using block__shuffle_int = rocprim::block_shuffle<int, 192>;
